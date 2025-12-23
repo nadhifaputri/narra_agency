@@ -94,7 +94,7 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://github.com/nadhifaputri/narra_agency/blob/main/image/modern-coffeehouse-with-contemporary-design.jpg);
+    background-image: url(image/modern-coffeehouse-with-contemporary-design);
     background-size: cover;
     position: relative;
     margin-top: 70px;
@@ -429,3 +429,4 @@ footer {
     }
 
 }
+
