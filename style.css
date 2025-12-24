@@ -40,10 +40,23 @@ header {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 5px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Logo dan Brand Container */
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 header h1 {
@@ -52,6 +65,7 @@ header h1 {
     color: var(--dark-brown);
     letter-spacing: 2px;
     font-family: 'Playfair Display', Georgia, serif;
+    margin: 0;
 }
 
 nav {
@@ -94,7 +108,7 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('image/modern-coffeehouse-with-contemporary-design.jpg');
+    background-image: url('/image/modern-coffeehouse-with-contemporary-design.jpg');
     background-size: cover;
     position: relative;
     margin-top: 70px;
@@ -337,6 +351,18 @@ footer {
         gap: 1rem;
     }
 
+    .logo-brand {
+        gap: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
     nav {
         gap: 1.5rem;
         flex-wrap: wrap;
@@ -385,8 +411,16 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        height: 35px;
+    }
+
     header h1 {
         font-size: 1.4rem;
+    }
+
+    .logo-brand {
+        gap: 8px;
     }
 
     nav a {
@@ -421,14 +455,10 @@ footer {
 
     .section ol li {
         font-size: 0.95rem;
-        line-height: 1;
+        line-height: 1.6;
     }
 
     .section.alt {
         padding: 3rem 1rem;
     }
-
 }
-
-
-
